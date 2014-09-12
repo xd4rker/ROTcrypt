@@ -38,3 +38,12 @@ This will decrypt the cypher based on letters' frequency (Works only with Englis
 Using verbose mode
 
     $ ./rotcrypt.sh -d "drsc sc k cezob dyz combod wocckqo" -v
+
+Screenshots
+===
+
+![01](http://i.imgur.com/1ezTOLb.png)
+
+![02](http://i.imgur.com/AUACzyj.png)
+
+![03](http://i.imgur.com/gJGXILA.png)
