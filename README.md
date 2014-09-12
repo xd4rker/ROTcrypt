@@ -3,6 +3,16 @@ ROTcrypt
 
 A simple ROT-x (Caesar cipher) encryption/decryption tool written in Bash
 
+Screenshots
+===
+
+![01](http://i.imgur.com/1ezTOLb.png)
+
+![02](http://i.imgur.com/AUACzyj.png)
+
+![03](http://i.imgur.com/gJGXILA.png)
+
+
 Usage
 ===
 
@@ -39,11 +49,4 @@ Using verbose mode
 
     $ ./rotcrypt.sh -d "drsc sc k cezob dyz combod wocckqo" -v
 
-Screenshots
-===
 
-![01](http://i.imgur.com/1ezTOLb.png)
-
-![02](http://i.imgur.com/AUACzyj.png)
-
-![03](http://i.imgur.com/gJGXILA.png)
