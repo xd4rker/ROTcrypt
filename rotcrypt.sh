@@ -40,8 +40,7 @@ function display_help() {
 	echo ""
 }
 
-if [[ -z $1 ]]
-	then
+if [[ -z $1 ]]; then
 	display_help
 	exit
 fi
