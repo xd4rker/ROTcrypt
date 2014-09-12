@@ -5,12 +5,7 @@
 
 # Display the help message
 function display_help() {
-	echo " ____   ___ _____                     _"
-	echo "|  _ \ / _ \_   _|__ _ __ _   _ _ __ | |_"
-	echo "| |_) | | | || |/ __| '__| | | | '_ \| __|"
-	echo "|  _ <| |_| || | (__| |  | |_| | |_) | |_"
-	echo '|_| \_\''\___/ |_|\___|_|   \__, | .__/ \__|'
-	echo "                          |___/|_|"
+
 	echo -e "\n"
 	echo "Usage:"
 	echo "------"
