@@ -1,11 +1,15 @@
 #!/bin/bash
 
+# Author : XD4rker
+# Email : xd4rker[at]gmail.com
+
+# Display the help message
 function display_help() {
 	echo " ____   ___ _____                     _"
 	echo "|  _ \ / _ \_   _|__ _ __ _   _ _ __ | |_"
 	echo "| |_) | | | || |/ __| '__| | | | '_ \| __|"
 	echo "|  _ <| |_| || | (__| |  | |_| | |_) | |_"
-	echo "|_| \_"'\'"\___/ |_|\___|_|   \__, | .__/ \__|"
+	echo '|_| \_\''\___/ |_|\___|_|   \__, | .__/ \__|'
 	echo "                          |___/|_|"
 	echo -e "\n"
 	echo "Usage:"
@@ -47,7 +51,7 @@ if [[ -z $1 ]]
 	exit
 fi
 
-# Calculate 
+# Calculate letters' frequency
 function frequency() {
 
 	array=( e t a o i n s h r d l c u m w f g y p b v k j x q z )
