@@ -52,8 +52,8 @@ function frequency() {
 
 	declare -A letters
 
-	for i in {0..25}
-	do
+	for i in {0..25}; do
+	
 		letters[${array[$i]}]=$i
 	done
 
@@ -80,8 +80,8 @@ function encode() {
 
 	letters_array=( {a..z} )
 
-	for l in {0..25}
-	do
+	for l in {0..25}; do
+	
 		tr_regex[$l]="a-z "${letters_array[$l]}"-za-"${letters_array[$l-1]};
 	done
 
@@ -96,10 +96,11 @@ function decode() {
 
 	letters_array=( {a..z} )
 
-	for n in {0..25}
-	do
+	for n in {0..25}; do
+	
 		tr_regex[$n]=${letters_array[$n]}"-za-"${letters_array[$n-1]}" a-z"
 	done
+	
 	echo $str | tr ${tr_regex[$2]}
 }
 
