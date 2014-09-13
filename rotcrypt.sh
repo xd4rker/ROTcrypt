@@ -53,7 +53,6 @@ function frequency() {
 	declare -A letters
 
 	for i in {0..25}; do
-	
 		letters[${array[$i]}]=$i
 	done
 
@@ -81,7 +80,6 @@ function encode() {
 	letters_array=( {a..z} )
 
 	for l in {0..25}; do
-	
 		tr_regex[$l]="a-z "${letters_array[$l]}"-za-"${letters_array[$l-1]};
 	done
 
@@ -97,7 +95,6 @@ function decode() {
 	letters_array=( {a..z} )
 
 	for n in {0..25}; do
-	
 		tr_regex[$n]=${letters_array[$n]}"-za-"${letters_array[$n-1]}" a-z"
 	done
 	
@@ -119,9 +116,9 @@ fi
 
 while getopts :h:e:d:v opts; do
    case ${opts} in
-      e) Encode_str=${OPTARG} ;;
-      d) Decode_str=${OPTARG} ;;
-	  v) Verbose=true;;
+   	e) Encode_str=${OPTARG} ;;
+	d) Decode_str=${OPTARG} ;;
+	v) Verbose=true;;
    esac
 done
 
