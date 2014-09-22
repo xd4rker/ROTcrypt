@@ -49,7 +49,6 @@ fi
 function frequency() {
 
 	array=( e t a o i n s h r d l c u m w f g y p b v k j x q z )
-
 	declare -A letters
 
 	for i in {0..25}; do
@@ -57,11 +56,10 @@ function frequency() {
 	done
 
 	text=$1
-
 	text_length=$(( `echo $text | wc -c` - 1 ))
-
 	k=1
 	n=0
+	
 	while (( k <= $text_length )); do
 		letter=`echo $text | cut -c $k`
 		n=$(( ${letters[$letter]} + $n ))
@@ -76,7 +74,6 @@ function frequency() {
 function encode() {
 
 	str=`echo $1 | tr "A-Z" "a-z"`
-
 	letters_array=( {a..z} )
 
 	for l in {0..25}; do
@@ -91,7 +88,6 @@ function encode() {
 function decode() {
 
 	str=`echo $1 | tr "A-Z" "a-z"`
-
 	letters_array=( {a..z} )
 
 	for n in {0..25}; do
@@ -164,7 +160,6 @@ if [[ $1 == *-d* && $# -ge 2 ]]; then
 	echo -ne "\nPlain text (ROT-$nn) : "
 	echo -e "$decoded_str\n" | tr "-" " "
 
-
 elif [[ $1 == *-e* && $# -ge 2 ]]; then
 
 	arg=`echo $Encode_str | tr " " "-"`
@@ -173,7 +168,6 @@ elif [[ $1 == *-e* && $# -ge 2 ]]; then
 
 		encoded_str=`encode $arg $first`
 		nn=$first
-		
 	else
 		encoded_str=`encode $arg 13`
 		nn=13
