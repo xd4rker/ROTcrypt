@@ -4,7 +4,7 @@
 # Email : xd4rker[at]gmail.com
 
 # Display the help message
-function display_help() {
+display_help() {
 
 	echo -e "\n"
 	echo "Usage:"
@@ -46,7 +46,7 @@ if [[ -z $1 ]]; then
 fi
 
 # Calculate letters' frequency
-function frequency() {
+frequency() {
 
 	array=( e t a o i n s h r d l c u m w f g y p b v k j x q z )
 	declare -A letters
@@ -71,7 +71,7 @@ function frequency() {
 }
 
 # Usage: encode <string> <number>
-function encode() {
+encode() {
 
 	str=`echo $1 | tr "A-Z" "a-z"`
 	letters_array=( {a..z} )
@@ -85,7 +85,7 @@ function encode() {
 }
 
 # Usage: decode <string> <number>
-function decode() {
+decode() {
 
 	str=`echo $1 | tr "A-Z" "a-z"`
 	letters_array=( {a..z} )
@@ -97,7 +97,7 @@ function decode() {
 	echo $str | tr ${tr_regex[$2]}
 }
 
-function show_spaces() {
+show_spaces() {
 
 	length=$(( `echo $1 | wc -c` - 4 ))
 	for ((a=1; a <= $length; a++)); do
