@@ -41,7 +41,7 @@ If the ROT argument isn't set, the script will use ROT-13 by default
 
     $ ./rotcrypt.sh -e "This is a super top secret message"
 
-This will decrypt the cypher based on letters' frequency (Works only with English alphabet) if the ROT argument isn't set
+This will decrypt the cypher based on letters' frequency (Works only with English alphabet)
 
     $ ./rotcrypt.sh -d "drsc sc k cezob dyz combod wocckqo"
 
